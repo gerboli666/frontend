@@ -71,7 +71,7 @@ function Contact() {
   const handleSubmit = async (event) => {
     event.preventDefault()
     console.log(event.target[0].value)
-  await axios.post('http://localhost:8080/api/send', {
+  await axios.post('https://pure-lake-12763.herokuapp.com/api/send', {
   
     fullName : event.target[0].value,
     email : event.target[1].value,
